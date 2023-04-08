@@ -1,20 +1,23 @@
 import React from 'react'
+import './App.css'
 import Header from './comps/header/Header'
 import Nav from './comps/nav/Nav'
 import Side from './comps/sidebar/Side'
-import Main from './comps/main/Main'
+import Mainpage from './comps/main/Mainpage'
+import Footer from './comps/Footer'
 
 const App = () => {
   return (
-    <div>
+    <div className='whole-app'>
       <div className="nav">
         <Nav />
       </div>
       <Header />
-      <div className="content">
+      <div className="app-content">
         <Side />
-        <Main />
+        <Mainpage />
       </div>
+      <Footer />
     </div>
   )
 }
