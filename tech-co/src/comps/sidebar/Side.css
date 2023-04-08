@@ -41,10 +41,17 @@
 }
 
 @media screen and (max-width: 450px) {
+    .sidebar-comp {
+        display: flex;
+        flex-direction: row;
+    }
+    
     .side-list {
-        display: grid;
-        grid-template-areas: "1 2"
-        "3 4";
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .side-list a {
+        display: inline-block;
     }
 }
 
