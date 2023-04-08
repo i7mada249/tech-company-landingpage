@@ -24,10 +24,12 @@
 .footer {
   background-color: #1d1d1d;
   color: white;
-  display: flex;
-  flex-direction: column;
+  left: 0;
+  bottom: 0;
+  right: 0;
   width: 100%;
   padding: 2rem 0;
+  margin-top: 3rem;
 }
 
 .footer a {

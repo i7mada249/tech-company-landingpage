@@ -25,30 +25,34 @@
     .sidebar-comp {
         display: block;
         width: 100%;
-        margin: 0;
-    }
-
-    .side-list {
-        flex-direction: row;
-        justify-content:last baseline;
-        align-items: center;
-        padding: 1rem;
-    }
-
-    .side-list a {
-        margin-right: 1rem;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .sidebar-comp {
-        display: flex;
-        flex-direction: row;
     }
     
     .side-list {
         overflow: auto;
         white-space: nowrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 1rem;
+    }
+    .side-list a {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .sidebar-comp {
+        display: block;
+        width: 100%;
+    }
+    
+    .side-list {
+        overflow: auto;
+        white-space: nowrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 1rem;
     }
     .side-list a {
         display: inline-block;
